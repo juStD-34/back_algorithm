@@ -1,0 +1,37 @@
+[
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "isPalindrome",
+        "kind": 2,
+        "importPath": "day02.palindrome",
+        "description": "day02.palindrome",
+        "peekOfCode": "def isPalindrome(self, x):\n    if x < 0:\n        return False\n    else: \n        strX = str(x)\n        for i in range(0, len(strX)//2):\n            if (strX[i] != strX[len(strX)-i-1]):\n                return False\n        return True\nprint(isPalindrome(0, -101))",
+        "detail": "day02.palindrome",
+        "documentation": {}
+    },
+    {
+        "label": "longestCommonPrefix",
+        "kind": 2,
+        "importPath": "day03.commonPrefix",
+        "description": "day03.commonPrefix",
+        "peekOfCode": "def longestCommonPrefix(self, strs) -> str:\n    strs.sort()\n    smallStr = strs[0]\n    bigStr = strs[-1]\n    ans = \"\"\n    for i in range (min(len(smallStr), len(bigStr))):\n        if (smallStr[i] != bigStr[i]):\n            return ans\n        ans += smallStr[i]\n    return ans",
+        "detail": "day03.commonPrefix",
+        "documentation": {}
+    },
+    {
+        "label": "twoSum",
+        "kind": 2,
+        "importPath": "two_sum_day1",
+        "description": "two_sum_day1",
+        "peekOfCode": "def twoSum(self, nums, target):\n    numMap = {}\n    n = len(nums)\n    for i in range(n):\n        numMap[nums[i]] = i\n    print (numMap)\n    for i in range(n):\n        complement = target - nums[i]\n        if complement in numMap and numMap[complement] != i:\n            return [i, numMap[complement]]",
+        "detail": "two_sum_day1",
+        "documentation": {}
+    }
+]
