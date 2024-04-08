@@ -19,10 +19,10 @@
     {
         "label": "longestCommonPrefix",
         "kind": 2,
-        "importPath": "day03.commonPrefix",
-        "description": "day03.commonPrefix",
+        "importPath": "commonPrefix",
+        "description": "commonPrefix",
         "peekOfCode": "def longestCommonPrefix(self, strs) -> str:\n    strs.sort()\n    smallStr = strs[0]\n    bigStr = strs[-1]\n    ans = \"\"\n    for i in range (min(len(smallStr), len(bigStr))):\n        if (smallStr[i] != bigStr[i]):\n            return ans\n        ans += smallStr[i]\n    return ans",
-        "detail": "day03.commonPrefix",
+        "detail": "commonPrefix",
         "documentation": {}
     },
     {
