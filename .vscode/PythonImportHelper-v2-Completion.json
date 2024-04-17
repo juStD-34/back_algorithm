@@ -134,6 +134,42 @@
         "documentation": {}
     },
     {
+        "label": "removeElement",
+        "kind": 2,
+        "importPath": "day06.removeElement",
+        "description": "day06.removeElement",
+        "peekOfCode": "def removeElement(self, nums, val):\n    count = 0\n    for i in range(len(nums)):\n        if nums[i] != val:\n            nums[count] = nums[i]\n            count += 1\n    return count",
+        "detail": "day06.removeElement",
+        "documentation": {}
+    },
+    {
+        "label": "strStr",
+        "kind": 2,
+        "importPath": "day07.firstOccured",
+        "description": "day07.firstOccured",
+        "peekOfCode": "def strStr(self, haystack, needle):\n    if (len(needle) > len(haystack)) :\n        return -1\n    for i in range (0, len(haystack) - len(needle) +1) :\n        if (haystack[i : i + len(needle)] == needle):\n            return i\n    return -1",
+        "detail": "day07.firstOccured",
+        "documentation": {}
+    },
+    {
+        "label": "searchInsert",
+        "kind": 2,
+        "importPath": "day08.insertPosition",
+        "description": "day08.insertPosition",
+        "peekOfCode": "def searchInsert(self, nums, target):\n    start = 0;\n    end = len(nums) - 1\n    while start <= end:\n        mid = (start + end) // 2\n        if nums[mid] == target:\n            return mid\n        elif nums[mid] < target:\n            start = mid + 1\n        else:",
+        "detail": "day08.insertPosition",
+        "documentation": {}
+    },
+    {
+        "label": "lengthOfLastWord",
+        "kind": 2,
+        "importPath": "day09.lastWordLength",
+        "description": "day09.lastWordLength",
+        "peekOfCode": "def lengthOfLastWord(self, s):\n    s = s.strip()\n    return len(s.split(' ')[-1])\nprint(lengthOfLastWord(0, \"   fly me   to   the moon  \"))",
+        "detail": "day09.lastWordLength",
+        "documentation": {}
+    },
+    {
         "label": "longestCommonPrefix",
         "kind": 2,
         "importPath": "commonPrefix",
