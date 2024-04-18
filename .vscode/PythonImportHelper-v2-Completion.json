@@ -170,6 +170,15 @@
         "documentation": {}
     },
     {
+        "label": "plusOne",
+        "kind": 2,
+        "importPath": "day10.plusOne",
+        "description": "day10.plusOne",
+        "peekOfCode": "def plusOne(self, digits):\n    res = 0\n    for i in range (0, len(digits)):\n        res = res*10 + digits[i]\n    res +=1\n    list_of_digits = [int(i) for i in str(res)]\nplusOne(0, [9,9])",
+        "detail": "day10.plusOne",
+        "documentation": {}
+    },
+    {
         "label": "longestCommonPrefix",
         "kind": 2,
         "importPath": "commonPrefix",
