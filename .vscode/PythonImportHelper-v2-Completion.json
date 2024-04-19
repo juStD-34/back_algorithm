@@ -179,6 +179,15 @@
         "documentation": {}
     },
     {
+        "label": "addBinary",
+        "kind": 2,
+        "importPath": "day11.addBinary",
+        "description": "day11.addBinary",
+        "peekOfCode": "def addBinary(self, a, b):\n    s= []\n    a_index = len(a) - 1\n    b_index = len(b) - 1\n    carry = 0\n    while a_index >= 0 or b_index >= 0 or carry == 1:\n        if (a_index >= 0):\n            carry += int(a[a_index])\n            a_index -= 1\n        if (b_index >= 0):",
+        "detail": "day11.addBinary",
+        "documentation": {}
+    },
+    {
         "label": "longestCommonPrefix",
         "kind": 2,
         "importPath": "commonPrefix",
