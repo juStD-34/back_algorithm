@@ -296,6 +296,24 @@
         "documentation": {}
     },
     {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "interview-training.reverstListNode",
+        "description": "interview-training.reverstListNode",
+        "peekOfCode": "class ListNode:\n    def __init__ (self, val = 0, next = None):\n        self.val = val\n        self.next = next\nclass Solution:\n    def reverseList(self, head):\n        if head == None or head.next == None:\n            return head\n        p = self.reverseList(head.next)\n        head.next.next = head",
+        "detail": "interview-training.reverstListNode",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "interview-training.reverstListNode",
+        "description": "interview-training.reverstListNode",
+        "peekOfCode": "class Solution:\n    def reverseList(self, head):\n        if head == None or head.next == None:\n            return head\n        p = self.reverseList(head.next)\n        head.next.next = head\n        head.next = None\n        return p\nif __name__ == \"__main__\":\n    node1 = ListNode(1)",
+        "detail": "interview-training.reverstListNode",
+        "documentation": {}
+    },
+    {
         "label": "longestCommonPrefix",
         "kind": 2,
         "importPath": "commonPrefix",

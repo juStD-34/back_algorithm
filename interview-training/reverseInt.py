@@ -14,7 +14,6 @@ def reverse(self, x):
         x = x // 10
         if (y > INT_MAX or y < INT_MIN):
             return 0
-    print(y)
     if (isNegative):
         x = y * -1
     else:
