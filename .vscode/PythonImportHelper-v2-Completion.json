@@ -1,5 +1,14 @@
 [
     {
+        "label": "typing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "typing",
+        "description": "typing",
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -203,6 +212,87 @@
         "description": "day12.sqrtX",
         "peekOfCode": "def mySqrt(self, x):\n    \"\"\"\n    :type x: int\n    :rtype: int\n    \"\"\"\n    if x == 0:\n        return 0\n    if x == 1:\n        return 1\n    left = 1",
         "detail": "day12.sqrtX",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "day13.removeDuplicateSortedListed",
+        "description": "day13.removeDuplicateSortedListed",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\ndef deleteDuplicates(self, head):\n    if not head:\n        return head\n    cur = head\n    while cur.next:\n        if cur.val == cur.next.val:",
+        "detail": "day13.removeDuplicateSortedListed",
+        "documentation": {}
+    },
+    {
+        "label": "deleteDuplicates",
+        "kind": 2,
+        "importPath": "day13.removeDuplicateSortedListed",
+        "description": "day13.removeDuplicateSortedListed",
+        "peekOfCode": "def deleteDuplicates(self, head):\n    if not head:\n        return head\n    cur = head\n    while cur.next:\n        if cur.val == cur.next.val:\n            cur.next = cur.next.next\n        else:\n            cur = cur.next\n    return head",
+        "detail": "day13.removeDuplicateSortedListed",
+        "documentation": {}
+    },
+    {
+        "label": "merge",
+        "kind": 2,
+        "importPath": "day14.mergetwoSortedList",
+        "description": "day14.mergetwoSortedList",
+        "peekOfCode": "def merge(self, nums1, m, nums2, n):\n    index1 = m - 1\n    index2 = n - 1\n    index = m + n - 1\n    while (index1 >= 0 and index2 >= 0):\n        if (nums1[index1] < nums2[index2]):\n            nums1[index] = nums2[index2]\n            index2 -= 1\n            index -= 1\n        else:",
+        "detail": "day14.mergetwoSortedList",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "interview-training.removeNode",
+        "description": "interview-training.removeNode",
+        "peekOfCode": "class ListNode:\n    def __init__ (self, val = 0, next = None):\n        self.val = val\n        self.next = next\nclass Solution:\n    def removeNode(self, node):\n        while (node.next is not None):\n            node.val = node.next.val\n            if (node.next.next is None):\n                node.next = None",
+        "detail": "interview-training.removeNode",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "interview-training.removeNode",
+        "description": "interview-training.removeNode",
+        "peekOfCode": "class Solution:\n    def removeNode(self, node):\n        while (node.next is not None):\n            node.val = node.next.val\n            if (node.next.next is None):\n                node.next = None\n            else:\n                node = node.next\nif __name__ == \"__main__\":\n    node1 = ListNode(1)",
+        "detail": "interview-training.removeNode",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "interview-training.removeNodeIndex",
+        "description": "interview-training.removeNodeIndex",
+        "peekOfCode": "class ListNode:\n    def __init__ (self, val = 0, next = None):\n        self.val = val\n        self.next = next\nclass Solution:\n    def removeNthFromEnd(self, head, n):\n        if (head is None):\n            return head\n        if (head.next is None):\n            return None",
+        "detail": "interview-training.removeNodeIndex",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "interview-training.removeNodeIndex",
+        "description": "interview-training.removeNodeIndex",
+        "peekOfCode": "class Solution:\n    def removeNthFromEnd(self, head, n):\n        if (head is None):\n            return head\n        if (head.next is None):\n            return None\n        current = head\n        length = 0\n        while(current.next is not None):\n            current = current.next",
+        "detail": "interview-training.removeNodeIndex",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "kind": 2,
+        "importPath": "interview-training.reverseInt",
+        "description": "interview-training.reverseInt",
+        "peekOfCode": "def reverse(self, x):\n    INT_MAX = 2**31 - 1\n    INT_MIN = -2**31\n    isNegative = False\n    y = 0\n    if (x < 0):\n        isNegative = True\n        x = x * -1\n    while (x > 0):\n        lastDigit = x % 10",
+        "detail": "interview-training.reverseInt",
+        "documentation": {}
+    },
+    {
+        "label": "reverseString",
+        "kind": 2,
+        "importPath": "interview-training.reverseString",
+        "description": "interview-training.reverseString",
+        "peekOfCode": "def reverseString(self, s):\n    for i in range (0, len(s)//2):\n        s[i], s[len(s)-i-1] = s[len(s)-i-1], s[i]\n    return s\nprint(reverseString(0, [\"h\",\"e\",\"l\",\"l\",\"o\"]))",
+        "detail": "interview-training.reverseString",
         "documentation": {}
     },
     {
