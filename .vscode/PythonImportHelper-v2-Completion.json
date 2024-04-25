@@ -244,6 +244,24 @@
     {
         "label": "ListNode",
         "kind": 6,
+        "importPath": "interview-training.palindromeLinkedList",
+        "description": "interview-training.palindromeLinkedList",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, val = 0, next = None):\n        self.val = val\n        self.next = next\nclass Solution(object):\n    def reverseList(self, head):\n        prev = None\n        while head is not None:\n            next = head.next\n            head.next = prev",
+        "detail": "interview-training.palindromeLinkedList",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "interview-training.palindromeLinkedList",
+        "description": "interview-training.palindromeLinkedList",
+        "peekOfCode": "class Solution(object):\n    def reverseList(self, head):\n        prev = None\n        while head is not None:\n            next = head.next\n            head.next = prev\n            prev = head\n            head = next\n        return prev\n    def isPalindrome(self, head):",
+        "detail": "interview-training.palindromeLinkedList",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
         "importPath": "interview-training.removeNode",
         "description": "interview-training.removeNode",
         "peekOfCode": "class ListNode:\n    def __init__ (self, val = 0, next = None):\n        self.val = val\n        self.next = next\nclass Solution:\n    def removeNode(self, node):\n        while (node.next is not None):\n            node.val = node.next.val\n            if (node.next.next is None):\n                node.next = None",
