@@ -24,6 +24,7 @@ class Solution(object):
             slow = slow.next
         slow = self.reverseList(slow)
         fast = head
+        
         while slow is not None:
             print(slow.val, fast.val)
             if slow.val != fast.val:

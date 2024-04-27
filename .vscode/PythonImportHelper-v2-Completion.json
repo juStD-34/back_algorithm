@@ -242,6 +242,15 @@
         "documentation": {}
     },
     {
+        "label": "Solutio",
+        "kind": 6,
+        "importPath": "interview-training.maxProfit",
+        "description": "interview-training.maxProfit",
+        "peekOfCode": "class Solution :\n    def maxProfit(self, prices):\n        min = prices[0]\n        max_profit = 0\n        for i in range (1, len(prices)):\n            if prices[i] < min:\n                min = prices[i]\n            max_profit = max(max_profit, prices[i] - min)\n        return max_profit",
+        "detail": "interview-training.maxProfit",
+        "documentation": {}
+    },
+    {
         "label": "ListNode",
         "kind": 6,
         "importPath": "interview-training.palindromeLinkedList",
@@ -345,7 +354,7 @@
         "kind": 2,
         "importPath": "two_sum_day1",
         "description": "two_sum_day1",
-        "peekOfCode": "def twoSum(self, nums, target):\n    numMap = {}\n    n = len(nums)\n    for i in range(n):\n        numMap[nums[i]] = i\n    print (numMap)\n    for i in range(n):\n        complement = target - nums[i]\n        if complement in numMap and numMap[complement] != i:\n            return [i, numMap[complement]]",
+        "peekOfCode": "def twoSum(self, nums, target):\n    numMap = {}\n    n = len(nums)\n    tr = True\n    if (tr): \n        print(111)\n    for i in range(n):\n        numMap[nums[i]] = i\n    print (numMap)\n    for i in range(n):",
         "detail": "two_sum_day1",
         "documentation": {}
     }
