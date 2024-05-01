@@ -242,6 +242,15 @@
         "documentation": {}
     },
     {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "interview-training.maximumSubarray",
+        "description": "interview-training.maximumSubarray",
+        "peekOfCode": "class Solution(object):\n    def maxSubArray(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        for i in range(1, len(nums)):\n            nums[i] = nums[i] + nums[i-1]\n        min = 0\n        max = nums[0]",
+        "detail": "interview-training.maximumSubarray",
+        "documentation": {}
+    },
+    {
         "label": "Solutio",
         "kind": 6,
         "importPath": "interview-training.maxProfit",
@@ -338,6 +347,15 @@
         "description": "interview-training.reverstListNode",
         "peekOfCode": "class Solution:\n    def reverseList(self, head):\n        if head == None or head.next == None:\n            return head\n        p = self.reverseList(head.next)\n        head.next.next = head\n        head.next = None\n        return p\nif __name__ == \"__main__\":\n    node1 = ListNode(1)",
         "detail": "interview-training.reverstListNode",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "interview-training.rob",
+        "description": "interview-training.rob",
+        "peekOfCode": "class Solution:\n    def rob(self, nums):\n        if len(nums) == 0:\n            return 0\n        if len(nums) == 1:\n            return nums[0]\n        if len(nums) == 2:\n            return max(nums[0], nums[1])\n        nums[1] = max(nums[0], nums[1])\n        for i in range(2, len(nums)):",
+        "detail": "interview-training.rob",
         "documentation": {}
     },
     {
