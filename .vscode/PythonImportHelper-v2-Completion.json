@@ -1,5 +1,13 @@
 [
     {
+        "label": "Solution",
+        "importPath": "day25.inorderTree",
+        "description": "day25.inorderTree",
+        "isExtraImport": true,
+        "detail": "day25.inorderTree",
+        "documentation": {}
+    },
+    {
         "label": "typing",
         "kind": 6,
         "isExtraImport": true,
@@ -239,6 +247,42 @@
         "description": "day14.mergetwoSortedList",
         "peekOfCode": "def merge(self, nums1, m, nums2, n):\n    index1 = m - 1\n    index2 = n - 1\n    index = m + n - 1\n    while (index1 >= 0 and index2 >= 0):\n        if (nums1[index1] < nums2[index2]):\n            nums1[index] = nums2[index2]\n            index2 -= 1\n            index -= 1\n        else:",
         "detail": "day14.mergetwoSortedList",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "day25.inorderTree",
+        "description": "day25.inorderTree",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution:\n    def inorderTraversal(self, root):\n        \"\"\"return type: List[int]\"\"\"\n        def helper(root,result):\n          if root != None:",
+        "detail": "day25.inorderTree",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "day25.inorderTree",
+        "description": "day25.inorderTree",
+        "peekOfCode": "class Solution:\n    def inorderTraversal(self, root):\n        \"\"\"return type: List[int]\"\"\"\n        def helper(root,result):\n          if root != None:\n            helper(root.left,result)\n            result.append(root.val)\n            helper(root.right,result)  \n        result = []\n        helper(root,result)",
+        "detail": "day25.inorderTree",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "day26.sameTree",
+        "description": "day26.sameTree",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def helper(self, p, q):\n        if p == None and q == None:\n            return True\n        if p == None or q == None:",
+        "detail": "day26.sameTree",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "day26.sameTree",
+        "description": "day26.sameTree",
+        "peekOfCode": "class Solution(object):\n    def helper(self, p, q):\n        if p == None and q == None:\n            return True\n        if p == None or q == None:\n            return False\n        if p.val == q.val:\n            return self.helper(p.left, q.left) and self.helper(p.right, q.right)\n        else:\n            return False",
+        "detail": "day26.sameTree",
         "documentation": {}
     },
     {
